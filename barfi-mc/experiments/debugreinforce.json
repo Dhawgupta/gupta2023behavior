@@ -1,0 +1,20 @@
+{    
+    "agent" : "REINFORCE",
+    "env_name" : "MountainCarSparseBangAux",
+    "optim" : ["sgd"],
+    "max_episodes" : 501,
+    "gamma" : 0.99,
+    "actor_reg" : [1.0],
+    "actor_lr" : [0.25],
+    "state_lr" : 0.0,
+    "critic_lr" : 0.0,
+    "batch_size" : 1,
+    "buffer_size" : 2,
+    "delta" : 3,
+    "raw_basis" : false,
+    "basis" : "tilecoding",
+    "tiles" : 4,
+    "tilings" :  5,
+    "NN_basis_dim" : "16",
+    "seed" : [1, 2]
+}

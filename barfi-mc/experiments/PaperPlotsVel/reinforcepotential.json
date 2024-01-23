@@ -1,0 +1,21 @@
+{    
+    "agent" : "REINFORCEPotential",
+    "env_name" : "MountainCarSparseVelAux",
+    "env_param" : [ 1],
+    "optim" : ["rmsprop","adam"],
+    "max_episodes" : [2000],
+    "gamma" : 0.99,
+    "actor_reg" : [0, 0.25],
+    "actor_lr" : [0.015625, 0.03125, 0.0625,  0.125, 0.25],
+    "state_lr" : 0.0,
+    "critic_lr" : 0.0,
+    "batch_size" : 1,
+    "buffer_size" : [10000],
+    "delta" : 3,
+    "raw_basis" : false,
+    "basis" : "tilecoding",
+    "tiles" : 4,
+    "tilings" :  5,
+    "NN_basis_dim" : "16",
+    "seed" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+}

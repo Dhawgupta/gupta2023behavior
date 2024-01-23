@@ -1,0 +1,20 @@
+{
+    "agent" : "ActorCritic",
+    "env_name" : "HalfCheetahV4",
+    "optim" : ["adam"],
+    "max_episodes" : [10000],
+    "aux_weight" : [ 4.0],
+    "gamma" : 0.99,
+    "actor_reg" : [0.0],
+    "actor_lr" : [0.000075, 0.0001, 0.00025, 0.0005,0.001 ],
+    "state_lr" : 0.0, 
+    "critic_lr_ratio" : [1.0, 0.5, 1.5, 2.0],
+    "batch_size" : 1,
+    "buffer_size" : 1,
+    "delta" : 1,
+    "raw_basis" : false,
+    "basis" : "NN",
+    "NN_basis_dim" : "32",
+    "gauss_std" : [0.1],
+    "seed" : [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+}
